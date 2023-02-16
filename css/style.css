@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Trochut:ital@1&family=Vujahday+Script&display=swap');
+
+* { margin: 0%;
+    padding:0;
+    box-sizing: 0; }
+
+body { background-color: rgb(59, 49, 36); overflow-x: hidden; width: 85%;
+    margin: 0px auto;}
+
+
+.heading { text-align: center; height: 80px; }
+
+.heading3pg {color: rgb(255, 241, 223); 
+    font-family: 'Estonia', cursive;
+    font-size: 5rem ;  
+    animation: header;
+    animation-duration: 3s;
+    position: relative; /*top-right-bottom-left*/
+    animation-fill-mode: forwards; 
+    margin: 25%;
+    animation-timing-function: ease-out;}
+    
+    @keyframes header {
+        0% { top: -500px;}
+        100% {top: 0px; }}
+    
+
+
+.retsept {
+    
+    text-align: center; 
+    color: rgb(223, 234, 255); 
+    font-family: 'Estonia', cursive;    
+    font-size: 2rem; 
+    font-weight: 550;
+    width: 40%;
+    margin: 300px;
+
+    border-radius: 5%; 
+    border-width: 8px; 
+    border-style:double; 
+    border-color: rgb(168, 217, 226);
+    padding: 5%;
+    margin: 40px auto;
+    animation: retsept;
+    position: relative;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes retsept {
+    0% { left: -1000px;}
+    85% { left: 0px;}
+    100% { left:0}  }
+
+
+    #pealdis { 
+        font-size: larger; 
+        font-weight: 700; 
+        color:rgb(223, 234, 255);}
+
+
+    #img {
+        border-radius: 4px;
+        width: 300px;
+        padding: 1%;
+        margin: 0px auto;}
+
+
+.list {
+    text-align: center; 
+    color: rgb(223, 234, 255); 
+    font-family: 'Estonia', cursive;    font-size: 2rem; 
+    font-weight: 550; 
+    width: 40%;
+    border: dashed 1px rgb(255, 241, 223);; 
+    padding: 10%;
+    margin: 40px auto;
+    margin-top: 32px;
+
+    animation: list;
+    position: relative;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;}
+
+@keyframes list {
+    0% { right: -1000px;}
+    85% { right: 0px;}
+    100% { right:0;}}
+
+    #valmistamine { font-size: larger; font-weight: 700; margin: 0 auto; color: rgb(255, 241, 223);}
+
+
+.main { border: 5px solid rgb(101, 155, 216); 
+    width: 75%; 
+    margin: 0 auto;}
+
+.link {
+    text-align: center; 
+    color: rgb(223, 234, 255); 
+    font-family: 'Estonia', cursive;    
+    font-size: 2rem; 
+    font-weight: 550; 
+    padding: 10%; text-decoration: none;}
+
+.footer { text-align:center; 
+    font-family: 'Vujahday Script', cursive;
+    font-size: 1rem; font-weight: 700;color: rgb(255, 255, 255);
+ 
+
+    opacity: 0;
+    margin: 2rem;
+    padding: 1rem;
+    
+    animation: aniBtn;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes aniBtn {
+   0%  {opacity: 0; } /*0-1*/
+   100% { opacity: 100;}   
+}
+
